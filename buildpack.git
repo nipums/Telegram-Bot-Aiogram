@@ -1,0 +1,18 @@
+-----> Building on the Heroku-20 stack
+-----> Using buildpack: heroku/python
+-----> Python app detected
+-----> Using Python version specified in runtime.txt
+ !     Python has released a security update! Please consider upgrading to python-3.9.10
+       Learn More: https://devcenter.heroku.com/articles/python-runtimes
+-----> No change in requirements detected, installing from cache
+-----> Using cached install of python-3.9.4
+-----> Installing pip 21.3.1, setuptools 57.5.0 and wheel 0.37.0
+-----> Installing SQLite3
+-----> Installing requirements with pip
+-----> Discovering process types
+       Procfile declares types -> worker
+-----> Compressing...
+       Done: 70.7M
+-----> Launching...
+       Released v9
+       https://trane-bot.herokuapp.com/ deployed to Heroku
