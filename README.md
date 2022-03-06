@@ -1,6 +1,7 @@
 # **Telegram Bot Aiogram *V1.0*** 
 
 [![GitHub](https://img.shields.io/github/license/trane102/Telegram-Bot-Aiogram)](https://github.com/trane102/Telegram-Bot-Aiogram/blob/main/LICENSE)
+[![GitHub watchers](https://img.shields.io/github/watchers/trane102/Telegram-Bot-Aiogram?style=social)](https://github.com/trane102/Telegram-Bot-Aiogram/watchers)
 
 ## **Functions:**
   - ***Weather:***
