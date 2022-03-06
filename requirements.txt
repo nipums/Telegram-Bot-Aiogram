@@ -3,3 +3,6 @@ pysqlite3
 requests
 beautifulsoup4
 lxml
+pytest
+flake8
+mypy
