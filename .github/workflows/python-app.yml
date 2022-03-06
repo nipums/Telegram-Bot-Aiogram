@@ -1,5 +1,4 @@
-name: Python application
-
+name: Code Test
 on:
   push:
     branches: [ main ]
