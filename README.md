@@ -1,6 +1,7 @@
 # **Telegram Bot Aiogram *V1.0*** 
 
-[![GitHub watchers][logo1]](https://github.com/trane102/Python-Telegram-Bot-2022/watchers)
+[![GitHub](https://img.shields.io/github/license/trane102/Telegram-Bot-Aiogram)](https://github.com/trane102/Telegram-Bot-Aiogram/blob/main/LICENSE)
+
 ## **Functions:**
   - ***Weather:***
   - ***Exchange rate:***
