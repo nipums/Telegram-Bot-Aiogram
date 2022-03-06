@@ -1,6 +1,6 @@
 # **Telegram Bot Aiogram *V1.0*** 
 
-![GitHub deployments](https://img.shields.io/github/deployments/trane102/Telegram-Bot-Aiogram/trane-bot?label=Deploy)
+[![GitHub deployments](https://img.shields.io/github/deployments/trane102/Telegram-Bot-Aiogram/trane-bot?label=Deploy)](https://github.com/trane102/Telegram-Bot-Aiogram/deployments/activity_log?environment=trane-bot)
 [![GitHub](https://img.shields.io/github/license/trane102/Telegram-Bot-Aiogram)](https://github.com/trane102/Telegram-Bot-Aiogram/blob/main/LICENSE)
 [![GitHub watchers](https://img.shields.io/github/watchers/trane102/Telegram-Bot-Aiogram?style=social)](https://github.com/trane102/Telegram-Bot-Aiogram/watchers)
 
