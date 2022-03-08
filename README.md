@@ -2,7 +2,8 @@
 
 [![Build Status](https://github.com/trane102/Telegram-Bot-Aiogram/actions/workflows/cheaks_code.yml/badge.svg?branch=main)](https://github.com/trane102/Telegram-Bot-Aiogram/actions/workflows/cheaks_code.yml)
 [![GitHub deployments](https://img.shields.io/github/deployments/trane102/Telegram-Bot-Aiogram/trane-bot?label=Deploy)](https://github.com/trane102/Telegram-Bot-Aiogram/deployments/activity_log?environment=trane-bot)
-[![GitHub](https://img.shields.io/github/license/trane102/Telegram-Bot-Aiogram)](https://github.com/trane102/Telegram-Bot-Aiogram/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/trane102/Telegram-Bot-Aiogram)](https://github.com/trane102/Telegram-Bot-Aiogram/blob/main/LICENSE)
+[![Developed by](https://img.shields.io/badge/Developed%20by-Trane-blue)](https://github.com/trane102)
 [![GitHub watchers](https://img.shields.io/github/watchers/trane102/Telegram-Bot-Aiogram?style=social)](https://github.com/trane102/Telegram-Bot-Aiogram/watchers)
 
 
