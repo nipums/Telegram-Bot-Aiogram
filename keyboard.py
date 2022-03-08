@@ -9,6 +9,6 @@ BTN_6 = KeyboardButton("Доллар $")
 BTN_7 = KeyboardButton("Евро €")
 BTN_8 = KeyboardButton("Назад ⬅")
 BTN_5_1 = KeyboardButton("Галерея фото 🌇")
-menu_1 = ReplyKeyboardMarkup(resize_keyboard=True).add(BTN_1, BTN_2, BTN_3, BTN_4, BTN_5, BTN_5_1)
+menu_1 = ReplyKeyboardMarkup(resize_keyboard=True).add(BTN_1, BTN_2, BTN_3, BTN_4, BTN_5)
 
 MI = ReplyKeyboardMarkup(resize_keyboard=True).add(BTN_6, BTN_7, BTN_8)
