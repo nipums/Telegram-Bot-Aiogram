@@ -1,12 +1,12 @@
 from aiogram import Bot, types
 from aiogram.dispatcher import Dispatcher
 from aiogram.utils import executor
-from confi import TOKEN
+from confi import TOKEN, BASE
 from keyboard import menu_1, MI
 import requests
 from bs4 import BeautifulSoup
 import data_base
-import sqlite3
+import psycopg2
 
 
 bot = Bot(TOKEN)
@@ -48,7 +48,7 @@ async def echo(message: types.Message):
             await message.answer(quote.text)
     elif message.text == "БД 😀":
         await message.answer("Ваши данные из БД:")
-        connect = sqlite3.connect('users.db')
+        connect = psycopg2.connect(BASE, sslmode="require")
         cursor = connect.cursor()
         people_id_2 = message.chat.id
         cursor.execute(f"SELECT id FROM user_id WHERE id = {people_id_2}")

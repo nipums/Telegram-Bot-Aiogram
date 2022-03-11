@@ -1,1 +1,2 @@
 TOKEN = "5047295857:AAHvFY_mz2HdUxfooGcdbzO8NR8tQroVy7o"
+BASE = "postgres://wvkvxffrhgamdh:e279990bcbb0230350c0a45d67e9b120ae7e2abf40b0efc0efda3ade47754c19@ec2-3-216-221-31.compute-1.amazonaws.com:5432/d8928g1dq47o2o"

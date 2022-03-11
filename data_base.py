@@ -1,15 +1,10 @@
-import sqlite3
+import psycopg2
+from confi import BASE
 
 
 def start(message):
-    connect = sqlite3.connect('users.db')
+    connect = psycopg2.connect(BASE, sslmode="require")
     cursor = connect.cursor()
-
-    cursor.execute("""CREATE TABLE IF NOT EXISTS user_id(
-        id INTEGER,
-        name TEXT,
-        last_name TEXT
-    )""")
 
     connect.commit()
     people_id = message.chat.id
@@ -26,7 +21,7 @@ def start(message):
 
 
 def delete(message):
-    connect = sqlite3.connect('users.db')
+    connect = psycopg2.connect(BASE, sslmode="require")
     cursor = connect.cursor()
     people_id = message.chat.id
     cursor.execute(f"DELETE FROM user_id WHERE id = {people_id}")
@@ -34,10 +29,8 @@ def delete(message):
 
 
 def show(message):
-    connect = sqlite3.connect('users.db')
+    connect = psycopg2.connect(BASE, sslmode="require")
     cursor = connect.cursor()
     people_id_2 = message.chat.id
     cursor.execute(f"SELECT id FROM user_id WHERE id = {people_id_2}")
     data = cursor.fetchone()
-
-
