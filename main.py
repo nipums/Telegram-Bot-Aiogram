@@ -59,8 +59,8 @@ async def echo(message: types.Message):
         else:
             for data1 in data:
                 text1 = "<strong>ID:</strong> " + str(data1[0])
-                text2 = "<strong>Имя:</strong> " + data1[1]
-                text3 = "<strong>Фамилия:</strong> " + data1[2]
+                text2 = "<strong>Имя:</strong> " + str(data1[1])
+                text3 = "<strong>Фамилия:</strong> " + str(data1[2])
                 await message.answer(text1)
                 await message.answer(text2)
                 await message.answer(text3)
