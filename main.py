@@ -9,7 +9,7 @@ import data_base
 import psycopg2
 
 
-bot = Bot(TOKEN)
+bot = Bot(TOKEN, parse_mode=types.ParseMode.HTML)
 dp = Dispatcher(bot)
 
 
@@ -51,14 +51,19 @@ async def echo(message: types.Message):
         connect = psycopg2.connect(BASE, sslmode="require")
         cursor = connect.cursor()
         people_id_2 = message.chat.id
-        cursor.execute(f"SELECT id FROM user_id WHERE id = {people_id_2}")
-        data = cursor.fetchone()
-        if data is None:
+        cursor.execute(f"SELECT id, name, last_name FROM user_id WHERE id = {people_id_2}")
+        data = cursor.fetchall()
+        if not data:
             await message.answer("Похоже, что вас нет в БД")
             await message.answer("Напишите /start")
         else:
-            for i in cursor.execute(f"SELECT name, last_name FROM user_id WHERE id = {people_id_2}"):
-                await message.answer(str(i))
+            for data1 in data:
+                text1 = "<strong>ID:</strong> " + str(data1[0])
+                text2 = "<strong>Имя:</strong> " + data1[1]
+                text3 = "<strong>Фамилия:</strong> " + data1[2]
+                await message.answer(text1)
+                await message.answer(text2)
+                await message.answer(text3)
     elif message.text == "Курс валют 📈":
         await message.answer("Валюта:", reply_markup=MI)
     elif message.text == "Доллар $":
