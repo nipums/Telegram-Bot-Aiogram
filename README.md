@@ -1,4 +1,4 @@
-# **Telegram Bot Aiogram *V1.0*** 
+# **Telegram Bot Aiogram *V1.1*** 
 
 [![Build Status](https://github.com/trane102/Telegram-Bot-Aiogram/actions/workflows/cheaks_code.yml/badge.svg?branch=main)](https://github.com/trane102/Telegram-Bot-Aiogram/actions/workflows/cheaks_code.yml)
 [![GitHub deployments](https://img.shields.io/github/deployments/trane102/Telegram-Bot-Aiogram/trane-bot?label=Deploy)](https://github.com/trane102/Telegram-Bot-Aiogram/deployments/activity_log?environment=trane-bot)
@@ -19,7 +19,7 @@ Programmer: Maxim Borisenko
 
 Technology: Python 3.10.0, sqlite3, aiogram
 
-Version: 1.0
+Version: 1.1
 ```
 
 > **Before using, insert your ID in confi.py**
