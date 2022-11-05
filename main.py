@@ -70,14 +70,14 @@ async def echo(message: types.Message):
         url2 = 'https://www.tinkoff.ru/invest/currencies/USDRUB/pulse/'
         response2 = requests.get(url2)
         soup2 = BeautifulSoup(response2.text, 'lxml')
-        quotes2 = soup2.find_all('div', class_="SecurityInvitingScreen__price_FSP8P")
+        quotes2 = soup2.find_all('span', class_="Money-module__money_UZBbhЫ")
         for i in quotes2:
             await message.answer(i.text)
     elif message.text == "Евро €":
         url3 = 'https://www.tinkoff.ru/invest/currencies/EURRUB/'
         response3 = requests.get(url3)
         soup3 = BeautifulSoup(response3.text, 'lxml')
-        quotes3 = soup3.find_all('div', class_="SecurityInvitingScreen__price_FSP8P")
+        quotes3 = soup3.find_all('span', class_="Money-module__money_UZBbh")
         for k in quotes3:
             await message.answer(k.text)
     elif message.text == "Назад ⬅":
