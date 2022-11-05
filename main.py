@@ -67,17 +67,17 @@ async def echo(message: types.Message):
     elif message.text == "Курс валют 📈":
         await message.answer("Валюта:", reply_markup=MI)
     elif message.text == "Доллар $":
-        url2 = 'https://www.tinkoff.ru/invest/currencies/USDRUB/pulse/'
+        url2 = 'https://www.tinkoff.ru/invest/currencies/USDRUB/'
         response2 = requests.get(url2)
         soup2 = BeautifulSoup(response2.text, 'lxml')
-        quotes2 = soup2.find_all('span', class_="Money-module__money_UZBbhЫ")
+        quotes2 = soup2.find_all('div', class_="SecurityInvitingScreen__price_FSP8PS")
         for i in quotes2:
             await message.answer(i.text)
     elif message.text == "Евро €":
         url3 = 'https://www.tinkoff.ru/invest/currencies/EURRUB/'
         response3 = requests.get(url3)
         soup3 = BeautifulSoup(response3.text, 'lxml')
-        quotes3 = soup3.find_all('span', class_="Money-module__money_UZBbh")
+        quotes3 = soup3.find_all('div', class_="SecurityInvitingScreen__price_FSP8P")
         for k in quotes3:
             await message.answer(k.text)
     elif message.text == "Назад ⬅":
