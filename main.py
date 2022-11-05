@@ -67,10 +67,10 @@ async def echo(message: types.Message):
     elif message.text == "Курс валют 📈":
         await message.answer("Валюта:", reply_markup=MI)
     elif message.text == "Доллар $":
-        url2 = 'https://www.tinkoff.ru/invest/currencies/USDRUB/'
+        url2 = 'https://quote.rbc.ru/ticker/59111'
         response2 = requests.get(url2)
         soup2 = BeautifulSoup(response2.text, 'lxml')
-        quotes2 = soup2.find_all('div', class_="SecurityInvitingScreen__price_FSP8PS")
+        quotes2 = soup2.find_all('span', class_="chart__info__sum")
         for i in quotes2:
             await message.answer(i.text)
     elif message.text == "Евро €":
