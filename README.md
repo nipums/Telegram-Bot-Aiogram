@@ -19,7 +19,7 @@ Programmer: Maxim Borisenko
 
 Technology: Python 3.10.0, sqlite3, aiogram
 
-Version: 1.1
+Version: 1.2
 ```
 
 > **Before using, insert your ID in confi.py**
