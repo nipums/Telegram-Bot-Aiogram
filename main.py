@@ -66,18 +66,18 @@ async def echo(message: types.Message):
                 await message.answer(text3)
     elif message.text == "Курс валют 📈":
         await message.answer("Валюта:", reply_markup=MI)
-    elif message.text == "Доллар $":
-        url2 = 'https://quote.rbc.ru/ticker/59111'
+    elif message.text == "Биткоин ₿":
+        url2 = 'https://www.binance.com/ru/price/bitcoin'
         response2 = requests.get(url2)
         soup2 = BeautifulSoup(response2.text, 'lxml')
-        quotes2 = soup2.find_all('span', class_="chart__info__sum")
+        quotes2 = soup2.find_all('div', class_="css-12ujz79")
         for i in quotes2:
             await message.answer(i.text)
-    elif message.text == "Евро €":
-        url3 = 'https://www.tinkoff.ru/invest/currencies/EURRUB/'
+    elif message.text == "Эфир Ξ":
+        url3 = 'https://www.binance.com/ru/price/ethereum'
         response3 = requests.get(url3)
         soup3 = BeautifulSoup(response3.text, 'lxml')
-        quotes3 = soup3.find_all('div', class_="SecurityInvitingScreen__price_FSP8P")
+        quotes3 = soup3.find_all('div', class_="css-12ujz79")
         for k in quotes3:
             await message.answer(k.text)
     elif message.text == "Назад ⬅":
