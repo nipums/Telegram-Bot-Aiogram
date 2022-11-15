@@ -46,6 +46,7 @@ async def echo(message: types.Message):
         for quote in quotes:
             await message.answer("В городе Сибай:")
             await message.answer(quote.text)
+            break
     elif message.text == "БД 😀":
         await message.answer("Ваши данные из БД:")
         connect = psycopg2.connect(BASE, sslmode="require")
