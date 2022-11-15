@@ -38,10 +38,10 @@ async def echo(message: types.Message):
         await message.answer("Ваш ID:")
         await message.answer(message.chat.id)
     elif message.text == "Погода 🌧":
-        url = 'https://weather.com/ru-RU/weather/today/l/5ad65038b8ca5303fbb202f94de129249870d2b8c1f8cba70e77231ed1007997'
+        url = 'https://world-weather.ru/pogoda/russia/sibay/'
         response = requests.get(url)
         soup = BeautifulSoup(response.text, 'lxml')
-        quotes = soup.find_all('span', class_="CurrentConditions--tempValue--3a50n")
+        quotes = soup.find_all('div', class_="weather-now-info")
 
         for quote in quotes:
             await message.answer("В городе Сибай:")
